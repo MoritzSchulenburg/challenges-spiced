@@ -14,19 +14,19 @@ Let's fix this mess!
   <!--someone forgot to wrap the content of our webpage with an HTML element,
 	which one was it again?-->
   <body>
-    <main>
+    <header>
       <h1>Jane Doe</h1>
       <!--Which elements could be used to link to parts of the webpage,
 		which appear below?-->
-      <section id="nav">
-        <p><a href="#about-me">About me</a></p>
-        <p><a href="#contact">Contact</a></p>
-        <p><a href="#skills">Skillset</a></p>
-      </section>
-    </main>
+      <nav id="nav">
+        <a href="#about-me">About me</a>
+        <a href="#contact">Contact</a>
+        <a href="#skills">Skillset</a>
+      </nav>
+    </header>
     <!--Looks like the following part is the central content of our webpage.-->
-    <header>
-      <nav id="about-me">
+    <main>
+      <section id="about-me">
         <h2>About me</h2>
         <p>
           Hi there! Welcome to my personal website. Here is gathered the most
@@ -43,7 +43,7 @@ Let's fix this mess!
           A random picture, because I would like to maintain my privacy and let
           my code speak for me, instead of images.
         </p>
-      </nav>
+      </section>
 
       <section id="contact">
         <h2>Contact</h2>
@@ -65,6 +65,6 @@ Let's fix this mess!
           <li>Party</li>
         </ul>
       </section>
-    </header>
+    </main>
   </body>
 </html>
