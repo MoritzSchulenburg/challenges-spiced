@@ -3,14 +3,15 @@
 /* ------- General Styles ------- */
 
 /* Task 1: First of all we want to adjust how the size of our elements is calculated when working with CSS. Do you know how to switch from "content-box" to "border-box"? */
-box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
 /* your solution */
 
 /* Task 2: Let's work on some basic stylings that we want to apply to all elements of your code via inheritance. Which selector do we need for this? */
 
 /* add selector */
-* {
-  box-sizing: border-box;
+body {
   font-family: monospace;
   font-size: 1rem;
   line-height: 1.5;
@@ -51,12 +52,12 @@ h1 {
 - Bonus:  The left border of the second section which contains a list of favourite Pokémon should have the color "gold". Hint: You may need a second CSS rule.
 */
 
+/* your solution */
 section {
   background-color: white;
   padding: 20px;
   margin: 10px;
-  border-left: 5px;
-  /* your solution */
+  border-left: 5px orange solid;
 }
 
 /* ------- Headings Part 2 ------- */
@@ -69,11 +70,15 @@ section {
 - Bonus: The color of the underline of "Favourite Pokémon" should be "orange". Hint: You may need another CSS rule.
 */
 
-.subtitle h2 {
-  text-decoration: underline solid 3px orange;
-  text-underline-offset: 100%;
+/* your solution */
+.subtitle {
+  text-decoration: underline solid 3px gold;
+  text-underline-offset: 10%;
   display: block;
-  /* your solution */
+}
+
+.favourites .subtitle {
+  text-decoration-color: orange;
 }
 
 /* ------- List ------- */
