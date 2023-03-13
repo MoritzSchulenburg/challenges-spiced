@@ -59,9 +59,12 @@ main {
 .box--center {
   background-color: #3498db;
   position: absolute;
-  top: 260px;
-  left: 210px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/* test */
 
 .box--bottom-left {
   background-color: #2874a6;
