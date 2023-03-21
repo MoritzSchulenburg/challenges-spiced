@@ -1,4 +1,4 @@
-console.clear();
+// console.clear();
 
 /*
 1: Create the data for a book in an online store. Create variables for the following data:
@@ -9,6 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+const title = "The Book";
+const author = "Moritz Schulenburg";
+let rating = 4;
+let salesNumber = 200;
 
 // --^-- write your code here --^--
 
@@ -26,6 +30,13 @@ Then log all variables to the console again.
 
 // --v-- write your code here --v--
 
+//console.log(title, author, rating, salesNumber);
+logBookData();
+salesNumber = 500;
+rating = 7;
+logBookData();
+//console.log(title, author, rating, salesNumber);
+
 // --^-- write your code here --^--
 
 /*
@@ -37,5 +48,17 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+
+function logBookData() {
+  console.log(title, author, rating, salesNumber);
+}
+
+salesNumber = 600;
+
+logBookData();
+
+salesNumber = 1000;
+
+logBookData();
 
 // --^-- write your code here --^--
