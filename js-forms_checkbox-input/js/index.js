@@ -25,6 +25,12 @@ form.addEventListener("submit", (event) => {
 
   // --^-- write your code here --^--
 
+  if (tos === true) {
+    return hideTosError();
+  } else {
+    showTosError();
+  }
+
   // eslint-disable-next-line no-alert
   alert("Form submitted");
 });
