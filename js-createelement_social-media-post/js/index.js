@@ -10,7 +10,7 @@ likeButton.addEventListener("click", handleLikeButtonClick);
 
 // Exercise:
 // Use document.createElement() and append another social media post to the body.
-const newPostContent = "Lorem Lorem Lorem Lorem";
+const newPostContent = "LorLoremLorLoremLorLoremLorLoremLorLorem Lorem";
 const newUsername = "@loremlorem";
 
 const newPost = document.createElement("article");
