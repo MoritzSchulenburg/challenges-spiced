@@ -19,4 +19,26 @@ const programmingLanguages = [
 
 // --v-- write/change code here --v--
 
+for (const programmingLanguage of programmingLanguages) {
+  const li = document.createElement("li");
+
+  li.textContent = programmingLanguage;
+
+  ol.appendChild(li);
+
+  console.log(programmingLanguage);
+}
+
 // --^-- write/change code here --^--
+
+// Looking at the [`js/index.js`](./js/index.js) , there is
+
+// - an `ol` created and appended to the document
+// - a string array stored to a variable called `programmingLanguages`.
+
+// For each array item, create a list item for the ordered list with its value as visible text. Use the `for...of` loop.
+
+// The following hints may guide you:
+
+// - What was the property to set the text of an HTML element again?
+// - Don't forget to append each list item!
