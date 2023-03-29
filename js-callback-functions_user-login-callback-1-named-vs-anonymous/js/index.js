@@ -5,4 +5,20 @@ function handleUserLogin(onSuccess) {
   onSuccess();
 }
 
-// Call handleUserLogin below!
+/* PART 1 */
+function showWelcomeMessage() {
+  console.log("Welcome! You are logged in now.");
+}
+
+handleUserLogin(showWelcomeMessage);
+
+/* PART 2 */
+
+handleUserLogin(() => {
+  showWelcomeMessage();
+});
+
+// Part 3
+handleUserLogin(() => {
+  console.log("Welcome! You are logged in now.");
+});
