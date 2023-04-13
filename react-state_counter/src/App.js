@@ -1,8 +1,9 @@
 import React from "react";
 import "./styles.css";
+import { useState } from "react";
 
 export default function App() {
-  let count = 0;
+  let [count, setCount] = useState(0);
 
   return (
     <div className="container">
@@ -12,6 +13,7 @@ export default function App() {
           type="button"
           onClick={() => {
             console.log("🤔");
+            count === 0 ? setCount(0) : setCount(count - 1);
           }}
         >
           -
@@ -20,6 +22,7 @@ export default function App() {
           type="button"
           onClick={() => {
             console.log("🤔");
+            setCount(count + 1);
           }}
         >
           +
